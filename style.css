@@ -1,0 +1,57 @@
+/* 
+Colors
+Blue 2075DC
+Blue Outline 45AFED
+Button Background SELECTED 007CEE
+Button Background NOT SELECTED 002047
+Button Text Color SELECTED 01D9F7
+Button Text Color NOT SELECTED 77BFE7
+*/
+
+.maindisplay{
+    width: 100%;
+    z-index: 10;
+
+    right: 0;
+
+    background-color: green;
+}
+
+.sidenav{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+    display: flexbox;
+    
+    background: rgb(32,117,220);
+    background: linear-gradient(180deg, rgba(32,117,220,1) 0%, rgba(32,117,220,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+.sidebutton{
+    width: 100%;
+
+    color: #77BFE7;
+    font-size: auto;
+    background: #002047;
+    padding: 10px 20px 10px 20px;
+    border: solid #45AFED 3px;
+    text-decoration: none;
+}
+
+.sidebutton:hover{
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+
+    color: #01D9F7;
+}
