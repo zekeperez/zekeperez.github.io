@@ -1,57 +1,71 @@
-/* 
-Colors
-Blue 2075DC
-Blue Outline 45AFED
-Button Background SELECTED 007CEE
-Button Background NOT SELECTED 002047
-Button Text Color SELECTED 01D9F7
-Button Text Color NOT SELECTED 77BFE7
-*/
 
-.maindisplay{
-    width: 80%;
-    z-index: 10;
-
-    right: 0;
-
-    background-color: green;
+:root {
+  --cyan: #28EFD1;
+  --violet: #360E93;
+  --purple: #7D18D6;
+  --pink: #FE3172;
+  --black: #111110;
+  --red:#E30922;
+  --cyan: #28EFD1;
+  --blueblack: #1D2226;
+  --blue: #3D6693;
+  --white: #FFFFFF;
+  --lightgrey: #CBCBCB;
 }
 
-.sidenav{
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-
-    display: flexbox;
-    
-    background: rgb(32,117,220);
-    background: linear-gradient(180deg, rgba(32,117,220,1) 0%, rgba(32,117,220,1) 50%, rgba(0,0,0,1) 100%);
+body{
+    display: flex;
+    flex-direction: row;
+    border: 0px;
+    background-color: var(--blueblack);
+    margin: 0;
+    padding: 0;
+    font-family: 'Istok Web', sans-serif;
 }
 
-.sidebutton{
-    width: 100%;
-
-    color: #77BFE7;
-    font-size: auto;
-    background: #002047;
-    padding: 10px 20px 10px 20px;
-    border: solid #45AFED 3px;
-    text-decoration: none;
+.sidebar{
+    min-width: 550px;
+    width: 15%;
+    height: 100vh;
+    background-color: #111110;
+    color: var(--white);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.sidebutton:hover{
-    background: #3cb0fd;
-    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-    text-decoration: none;
+.sidebarName{
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom: 0px;
+    position: relative;
+    font-size: 48px;
+}
 
-    color: #01D9F7;
+.sidebarSubtitle{
+    font-size: 24px;
+    margin: 0;
+}
+
+.sidebarNote{
+    font-size: 15px;
+    margin: 0;
+    color: var(--lightgrey)
+}
+
+.sidebarNavContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    color: var(--cyan);
+    width: 50%;
+    justify-content: left;
+    text-align: left;
+    font-size: 24px;
+}
+
+.sideBarNavButton{
+    margin-top: 50px;
 }
