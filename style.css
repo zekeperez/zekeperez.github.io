@@ -24,16 +24,17 @@ body{
 }
 
 .sidebar{
-    min-width: 550px;
     width: 15%;
     height: 100vh;
     background-color: #111110;
     color: var(--white);
     display: flex;
     text-align: center;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .sidebarName{
@@ -41,11 +42,11 @@ body{
     margin-top: 150px;
     margin-bottom: 0px;
     position: relative;
-    font-size: 48px;
+    font-size: 3em;
 }
 
 .sidebarSubtitle{
-    font-size: 24px;
+    font-size: 1.25em;
     margin: 0;
 }
 
@@ -67,5 +68,5 @@ body{
 }
 
 .sideBarNavButton{
-    margin-top: 50px;
+    margin-top: 1em;
 }
