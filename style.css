@@ -65,8 +65,39 @@ body{
     justify-content: left;
     text-align: left;
     font-size: 24px;
+    margin-right: auto;
 }
 
 .sideBarNavButton{
-    margin-top: 1em;
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    gap: 5px;
+    color: var(--cyan);
+    cursor: pointer;
 }
+
+.sideBarNavButton:hover{
+    color: var(--pink);
+}
+
+.sidebarIcon{
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* prevent flex from shrinking the container */
+}
+
+.sidebarIcon svg {
+    width: auto;       /* let the SVG keep its aspect ratio */
+    height: 100%;      /* fill the container vertically */
+    flex-shrink: 0;    /* prevent flexbox from shrinking the SVG */
+}
+
+/* .mainBody{
+    background-color: red;
+} */
+
