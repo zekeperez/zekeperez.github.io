@@ -36,18 +36,29 @@ body::before {
   pointer-events: none;
 }
 
+a{
+    color: var(--blue);
+}
+
 .sidebar{
-    width: 15%;
-    height: 100vh;
+    width: 300px;
+    height: 100dvh;              /* modern viewport fix */
     background-color: #111110;
     color: var(--white);
+
     display: flex;
-    text-align: center;
-    /* justify-content: center; */
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+
     padding-left: 50px;
     padding-right: 50px;
+
+    box-sizing: border-box;      /* ensures padding stays inside 15% width */
+
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .sidebarName{
@@ -55,16 +66,16 @@ body::before {
     margin-top: 150px;
     margin-bottom: 0px;
     position: relative;
-    font-size: 3em;
+    font-size: 2rem;
 }
 
 .sidebarSubtitle{
-    font-size: 1.25em;
+    font-size: 1rem;
     margin: 0;
 }
 
 .sidebarNote{
-    font-size: 15px;
+    font-size: 0.75rem;
     margin: 0;
     color: var(--lightgrey)
 }
@@ -111,17 +122,68 @@ body::before {
 }
 
 .mainBody{
+    margin-left: 300px;            /* pushes content to the right of sidebar */
     padding-top: 10rem;
     padding-left: 50px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .mainBodyTitle{
-    font-size: 2rem;
+    font-size: 3rem;
     color: #FFFFFF;
 }
 
 .bentoBox{
     background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.bentoContainer{
+    /* padding-top: 50px; */
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+}
+
+.bentoLandingPageLeftContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.bentoLandingPageRightContainer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.bentoTitle{
+    font-size: 3rem;
+    color: var(--white);
+    padding-top: 50px;
+    text-align: center;
+}
+
+.bentoSubtitle{
+    font-size: 1rem;
+    color: var(--lightgrey);
+    padding-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+}
+
+.bentoHyperlink{
+    padding-top: 20px;
+    font-size: 0.75rem;
 }
 
 /* .mainBody{
