@@ -137,6 +137,7 @@ a{
 .mainBodyTitle{
     font-size: 3rem;
     color: #FFFFFF;
+    display: relative;
 }
 
 .bentoBox{
@@ -222,6 +223,10 @@ a{
         transform: translateX(0%);
         z-index: -1;
         pointer-events: none;
+    }
+
+    .mainBodyTitle{
+        display: none;
     }
 
     .sidebar{
